@@ -1,0 +1,56 @@
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disc-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#disc {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+}
+
+#needle {
+    position: absolute;
+    width: 150px;
+    height: 8px;
+    background-color: silver;
+    border-radius: 5px;
+    transform: rotate(30deg);
+    transform-origin: right center;
+    top: 50px;
+    left: 120px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700;
+    background-color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    width: 140px;
+    height: 50px;
+}
